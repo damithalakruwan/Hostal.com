@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Entry/Exit System</title>
+  <link rel="stylesheet" href="HostelQR.css">
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+
+  <h1>Hostel Entry/Exit System</h1>
+
+  <div id="qrcode"></div> <!-- Display QR Code -->
+
+  <form id="hostel-form">
+    <label for="email">Enter QR Code (User email):</label>
+    <input type="text" id="email" name="email" placeholder="Scan or Enter User Email" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="status"></div> <!-- Entry/Exit status message -->
+
+  <script src="HostelQR.js"></script>
+
+</body>
+</html>
